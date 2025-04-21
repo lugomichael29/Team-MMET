@@ -71,7 +71,7 @@
             this.texPassword.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.texPassword.Properties.Appearance.Options.UseFont = true;
             this.texPassword.Properties.AutoHeight = false;
-            this.texPassword.Properties.ContextImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("tePassword.Properties.ContextImageOptions.SvgImage")));
+            this.texPassword.Properties.ContextImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("texPassword.Properties.ContextImageOptions.SvgImage")));
             this.texPassword.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
             this.texPassword.Properties.UseAdvancedMode = DevExpress.Utils.DefaultBoolean.True;
             this.texPassword.Properties.UseSystemPasswordChar = true;
@@ -120,10 +120,11 @@
             // pictureEdit2
             // 
             this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
-            this.pictureEdit2.Location = new System.Drawing.Point(480, 34);
+            this.pictureEdit2.Location = new System.Drawing.Point(467, 12);
             this.pictureEdit2.Name = "pictureEdit2";
+            this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit2.Size = new System.Drawing.Size(120, 110);
+            this.pictureEdit2.Size = new System.Drawing.Size(146, 132);
             this.pictureEdit2.TabIndex = 9;
             // 
             // LogInForm

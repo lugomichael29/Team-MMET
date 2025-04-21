@@ -17,5 +17,12 @@ namespace SweetBoxInventorySystem.WinForms
         {
             InitializeComponent();
         }
+
+        private void accordionControlAddProduct_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddProductForm form = new AddProductForm();
+            form.Show();
+        }
     }
 }
