@@ -13,6 +13,8 @@ namespace SweetBoxInventorySystem.WinForms
 {
     public partial class LogInForm : DevExpress.XtraEditors.XtraForm
     {
+
+        private string _connectionstring = @"Data Source = StudentDemo.db;Version=3";
         public LogInForm()
         {
             InitializeComponent();
@@ -38,6 +40,11 @@ namespace SweetBoxInventorySystem.WinForms
             {
                 XtraMessageBox.Show("Invalid Username or Password.", "Login Fieled", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void LogInForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -140,6 +140,7 @@
             this.Name = "LogInForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "LogInForm";
+            this.Load += new System.EventHandler(this.LogInForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.texUserName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.texPassword.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();

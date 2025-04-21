@@ -36,3 +36,4 @@ C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInvent
 C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\bin\Debug\DevExpress.XtraBars.v23.2.xml
 C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\bin\Debug\DevExpress.XtraLayout.v23.2.xml
 C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\obj\Debug\SweetBoxInventorySystem.WinForms.MainForm.resources
+C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\obj\Debug\SweetBoxInventorySystem.WinForms.AddProductForm.resources
