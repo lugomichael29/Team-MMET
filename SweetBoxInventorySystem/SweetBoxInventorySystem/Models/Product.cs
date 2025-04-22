@@ -14,14 +14,17 @@ namespace SweetBoxInventorySystem.Models
         public string ProductName { get; set; }
         public decimal ProductPrice { get; set; }
         public int ProductQuantity { get; set; }
+        public DateTime ExpiryDate { get; set; }
 
 
-        public Product(int productId, string productName, decimal productPrice, int productQuantity )
+
+        public Product(int productId, string productName, decimal productPrice, int productQuantity, DateTime expiryDate )
         {
             ProductId = productId;
             ProductName = productName;
             ProductPrice = productPrice;
             ProductQuantity = productQuantity;
+            ExpiryDate = expiryDate;
         }
 
 

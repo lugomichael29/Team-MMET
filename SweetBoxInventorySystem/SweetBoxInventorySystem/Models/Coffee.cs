@@ -8,15 +8,16 @@ namespace SweetBoxInventorySystem.Models
 {
     public class Coffee : Product
     {
-        public string ProductType { get; set; } // E.g., Espresso, Latte, etc.
-        public string ProductSize { get; set; } // E.g., Small, Medium, Large
+        public string ProductType { get; set; } // example Espresso, Latte, etc.
+        public string ProductSize { get; set; } // example Small, Medium, Large
+        public int CoffeePrize { get; set; }//
 
-        public Coffee (int productId, string productName, decimal productPrice, int productQuantity, string productType, string productSize) :
-            base(productId, productName, productPrice, productQuantity)
+        public Coffee (int productId, string productName, decimal productPrice, int productQuantity, DateTime expiryDate, string productType, string productSize, int coffeePrize) :
+            base(productId, productName, productPrice, productQuantity,expiryDate)
         {
             ProductType = productType;
             ProductSize = productSize;
-
+            CoffeePrize = coffeePrize;
         }
           
         public override string GetProductInfo()

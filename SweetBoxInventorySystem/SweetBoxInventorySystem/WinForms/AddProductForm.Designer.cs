@@ -32,6 +32,7 @@
             this.gridControlProduct = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControlAddingProduct = new DevExpress.XtraEditors.GroupControl();
+            this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnUpdate = new DevExpress.XtraEditors.SimpleButton();
@@ -47,7 +48,6 @@
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlProduct)).BeginInit();
@@ -78,10 +78,10 @@
             // 
             // gridControlProduct
             // 
-            this.gridControlProduct.Location = new System.Drawing.Point(12, 286);
+            this.gridControlProduct.Location = new System.Drawing.Point(12, 274);
             this.gridControlProduct.MainView = this.gridView1;
             this.gridControlProduct.Name = "gridControlProduct";
-            this.gridControlProduct.Size = new System.Drawing.Size(793, 381);
+            this.gridControlProduct.Size = new System.Drawing.Size(793, 393);
             this.gridControlProduct.TabIndex = 5;
             this.gridControlProduct.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -110,9 +110,17 @@
             this.groupControlAddingProduct.Controls.Add(this.labelControl1);
             this.groupControlAddingProduct.Location = new System.Drawing.Point(12, 12);
             this.groupControlAddingProduct.Name = "groupControlAddingProduct";
-            this.groupControlAddingProduct.Size = new System.Drawing.Size(793, 270);
+            this.groupControlAddingProduct.Size = new System.Drawing.Size(793, 258);
             this.groupControlAddingProduct.TabIndex = 4;
             this.groupControlAddingProduct.Text = "PRODUCT ";
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Location = new System.Drawing.Point(527, 151);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(183, 32);
+            this.btnEdit.TabIndex = 12;
+            this.btnEdit.Text = "Edit";
             // 
             // btnSave
             // 
@@ -230,26 +238,18 @@
             this.layoutControlItem1.Control = this.groupControlAddingProduct;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(797, 274);
+            this.layoutControlItem1.Size = new System.Drawing.Size(797, 262);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.gridControlProduct;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 274);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 262);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(797, 385);
+            this.layoutControlItem2.Size = new System.Drawing.Size(797, 397);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Location = new System.Drawing.Point(527, 151);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(183, 32);
-            this.btnEdit.TabIndex = 12;
-            this.btnEdit.Text = "Edit";
             // 
             // AddProductForm
             // 

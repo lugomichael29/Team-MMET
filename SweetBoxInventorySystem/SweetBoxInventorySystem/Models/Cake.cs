@@ -8,18 +8,18 @@ namespace SweetBoxInventorySystem.Models
 {
     public class Cake : Product
     {
-        public string ProductFlavor { get; set; } // E.g., Chocolate, Vanilla, etc.
-        public string ProductSize { get; set; } // E.g., Small, Medium, Large
+        public string ProductFlavor { get; set; } // Example Chocolate, Vanilla, etc.
+        public int CakePrize { get; set; } // Example Small, Medium, Large
 
-        public Cake(int productId, string productName, decimal productPrice, int productQuantity, string productFlavor, string productSize) :
-            base(productId, productName, productPrice, productQuantity)
+        public Cake(int productId, string productName, decimal productPrice, int productQuantity,DateTime expiryDate, string productFlavor, int cakePrize) :
+            base(productId, productName, productPrice, productQuantity, expiryDate)
         {
             ProductFlavor = productFlavor ;
-            ProductSize = productSize;
+            CakePrize = cakePrize;
         }
         public override string GetProductInfo()
         {
-            return $"Flavor: {ProductFlavor}, Size: {ProductSize}";
+            return $"Flavor: {ProductFlavor}, Size: {CakePrize}";
         }
     }
 }
