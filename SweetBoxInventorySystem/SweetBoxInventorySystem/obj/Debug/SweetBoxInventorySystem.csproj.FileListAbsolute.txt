@@ -47,3 +47,4 @@ C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInvent
 C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\bin\Debug\DevExpress.RichEdit.v23.2.Core.xml
 C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\bin\Debug\DevExpress.XtraTreeList.v23.2.xml
 C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\bin\Debug\DevExpress.Office.v23.2.Core.xml
+C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\obj\Debug\SweetBoxInventorySystem.UserControl.ProductUC.resources
