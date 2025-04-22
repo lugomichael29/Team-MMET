@@ -29,7 +29,10 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.gridControlProduct = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControlAddingProduct = new DevExpress.XtraEditors.GroupControl();
+            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnUpdate = new DevExpress.XtraEditors.SimpleButton();
             this.btnInsert = new DevExpress.XtraEditors.SimpleButton();
@@ -43,12 +46,12 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.gridControlProduct = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
+            this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlProduct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlAddingProduct)).BeginInit();
             this.groupControlAddingProduct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.texQuantity.Properties)).BeginInit();
@@ -57,8 +60,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.texProductId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlProduct)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,10 +76,26 @@
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
+            // gridControlProduct
+            // 
+            this.gridControlProduct.Location = new System.Drawing.Point(12, 286);
+            this.gridControlProduct.MainView = this.gridView1;
+            this.gridControlProduct.Name = "gridControlProduct";
+            this.gridControlProduct.Size = new System.Drawing.Size(793, 381);
+            this.gridControlProduct.TabIndex = 5;
+            this.gridControlProduct.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridControlProduct;
+            this.gridView1.Name = "gridView1";
+            // 
             // groupControlAddingProduct
             // 
             this.groupControlAddingProduct.AppearanceCaption.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupControlAddingProduct.AppearanceCaption.Options.UseFont = true;
+            this.groupControlAddingProduct.Controls.Add(this.btnEdit);
             this.groupControlAddingProduct.Controls.Add(this.btnSave);
             this.groupControlAddingProduct.Controls.Add(this.btnDelete);
             this.groupControlAddingProduct.Controls.Add(this.btnUpdate);
@@ -93,13 +110,21 @@
             this.groupControlAddingProduct.Controls.Add(this.labelControl1);
             this.groupControlAddingProduct.Location = new System.Drawing.Point(12, 12);
             this.groupControlAddingProduct.Name = "groupControlAddingProduct";
-            this.groupControlAddingProduct.Size = new System.Drawing.Size(793, 326);
+            this.groupControlAddingProduct.Size = new System.Drawing.Size(793, 270);
             this.groupControlAddingProduct.TabIndex = 4;
             this.groupControlAddingProduct.Text = "PRODUCT ";
             // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(527, 205);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(183, 32);
+            this.btnSave.TabIndex = 11;
+            this.btnSave.Text = "Save";
+            // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(588, 171);
+            this.btnDelete.Location = new System.Drawing.Point(299, 205);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(183, 32);
             this.btnDelete.TabIndex = 10;
@@ -107,7 +132,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(588, 123);
+            this.btnUpdate.Location = new System.Drawing.Point(527, 97);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(183, 32);
             this.btnUpdate.TabIndex = 9;
@@ -115,7 +140,7 @@
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(588, 70);
+            this.btnInsert.Location = new System.Drawing.Point(527, 44);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(183, 32);
             this.btnInsert.TabIndex = 8;
@@ -123,28 +148,28 @@
             // 
             // texQuantity
             // 
-            this.texQuantity.Location = new System.Drawing.Point(139, 180);
+            this.texQuantity.Location = new System.Drawing.Point(126, 163);
             this.texQuantity.Name = "texQuantity";
             this.texQuantity.Size = new System.Drawing.Size(356, 20);
             this.texQuantity.TabIndex = 7;
             // 
             // texPrice
             // 
-            this.texPrice.Location = new System.Drawing.Point(139, 144);
+            this.texPrice.Location = new System.Drawing.Point(126, 127);
             this.texPrice.Name = "texPrice";
             this.texPrice.Size = new System.Drawing.Size(356, 20);
             this.texPrice.TabIndex = 6;
             // 
             // texProductName
             // 
-            this.texProductName.Location = new System.Drawing.Point(139, 100);
+            this.texProductName.Location = new System.Drawing.Point(126, 83);
             this.texProductName.Name = "texProductName";
             this.texProductName.Size = new System.Drawing.Size(356, 20);
             this.texProductName.TabIndex = 5;
             // 
             // texProductId
             // 
-            this.texProductId.Location = new System.Drawing.Point(139, 64);
+            this.texProductId.Location = new System.Drawing.Point(126, 47);
             this.texProductId.Name = "texProductId";
             this.texProductId.Size = new System.Drawing.Size(356, 20);
             this.texProductId.TabIndex = 4;
@@ -153,7 +178,7 @@
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(63, 183);
+            this.labelControl4.Location = new System.Drawing.Point(50, 166);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(62, 17);
             this.labelControl4.TabIndex = 3;
@@ -163,7 +188,7 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(87, 144);
+            this.labelControl3.Location = new System.Drawing.Point(74, 127);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(38, 17);
             this.labelControl3.TabIndex = 2;
@@ -173,7 +198,7 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(29, 103);
+            this.labelControl2.Location = new System.Drawing.Point(16, 86);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(96, 17);
             this.labelControl2.TabIndex = 1;
@@ -183,7 +208,7 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(51, 67);
+            this.labelControl1.Location = new System.Drawing.Point(38, 50);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(74, 17);
             this.labelControl1.TabIndex = 0;
@@ -205,41 +230,26 @@
             this.layoutControlItem1.Control = this.groupControlAddingProduct;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(797, 330);
+            this.layoutControlItem1.Size = new System.Drawing.Size(797, 274);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
-            // 
-            // gridControlProduct
-            // 
-            this.gridControlProduct.Location = new System.Drawing.Point(12, 342);
-            this.gridControlProduct.MainView = this.gridView1;
-            this.gridControlProduct.Name = "gridControlProduct";
-            this.gridControlProduct.Size = new System.Drawing.Size(793, 325);
-            this.gridControlProduct.TabIndex = 5;
-            this.gridControlProduct.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.GridControl = this.gridControlProduct;
-            this.gridView1.Name = "gridView1";
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.gridControlProduct;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 330);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 274);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(797, 329);
+            this.layoutControlItem2.Size = new System.Drawing.Size(797, 385);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
-            // btnSave
+            // btnEdit
             // 
-            this.btnSave.Location = new System.Drawing.Point(588, 277);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(183, 32);
-            this.btnSave.TabIndex = 11;
-            this.btnSave.Text = "Save";
+            this.btnEdit.Location = new System.Drawing.Point(527, 151);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(183, 32);
+            this.btnEdit.TabIndex = 12;
+            this.btnEdit.Text = "Edit";
             // 
             // AddProductForm
             // 
@@ -251,6 +261,8 @@
             this.Text = "AddProductForm";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlProduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlAddingProduct)).EndInit();
             this.groupControlAddingProduct.ResumeLayout(false);
             this.groupControlAddingProduct.PerformLayout();
@@ -260,8 +272,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.texProductId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlProduct)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             this.ResumeLayout(false);
 
@@ -288,5 +298,6 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraEditors.SimpleButton btnSave;
+        private DevExpress.XtraEditors.SimpleButton btnEdit;
     }
 }

@@ -11,8 +11,8 @@ namespace SweetBoxInventorySystem.Models
         public string ProductType { get; set; } // E.g., Espresso, Latte, etc.
         public string ProductSize { get; set; } // E.g., Small, Medium, Large
 
-        public Coffee (int productId, string productName, decimal productPrice, string productType, string productSize) :
-            base(productId, productName, productPrice)
+        public Coffee (int productId, string productName, decimal productPrice, int productQuantity, string productType, string productSize) :
+            base(productId, productName, productPrice, productQuantity)
         {
             ProductType = productType;
             ProductSize = productSize;

@@ -133,6 +133,8 @@
             // 
             this.accordionControlAddProduct.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accordionControlAddProduct.Appearance.Default.Options.UseFont = true;
+            this.accordionControlAddProduct.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlAddProduct.ImageOptions.SvgImage")));
+            this.accordionControlAddProduct.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
             this.accordionControlAddProduct.Name = "accordionControlAddProduct";
             this.accordionControlAddProduct.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlAddProduct.Text = "Add Product";
