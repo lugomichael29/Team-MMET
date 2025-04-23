@@ -24,5 +24,7 @@ namespace SweetBoxInventorySystem.WinForms
             AddProductForm form = new AddProductForm();
             form.Show();
         }
+
+        
     }
 }

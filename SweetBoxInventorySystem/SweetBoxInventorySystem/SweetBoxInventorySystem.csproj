@@ -119,6 +119,9 @@
     <EmbeddedResource Include="UserControl\ProductUC.resx">
       <DependentUpon>ProductUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\AddCakeForm.resx">
+      <DependentUpon>AddCakeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WinForms\AddProductForm.resx">
       <DependentUpon>AddProductForm.cs</DependentUpon>
     </EmbeddedResource>

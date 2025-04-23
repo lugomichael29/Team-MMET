@@ -28,17 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlProduct = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControl = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlOrder = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlInventory = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlSupplier = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlAddProduct = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.accordionControlOrder = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement8 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement9 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement10 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement11 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement12 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +52,9 @@
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement1,
-            this.accordionControlElement2});
+            this.accordionControlElement2,
+            this.accordionControlElement8,
+            this.accordionControlElement11});
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.Size = new System.Drawing.Size(259, 759);
@@ -57,88 +63,57 @@
             // 
             // accordionControlElement1
             // 
-            this.accordionControlElement1.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement1.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accordionControlElement1.Appearance.Default.Options.UseFont = true;
             this.accordionControlElement1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlProduct,
-            this.accordionControl,
-            this.accordionControlOrder,
-            this.accordionControlInventory,
-            this.accordionControlSupplier});
+            this.accordionControlElement3,
+            this.accordionControlElement4,
+            this.accordionControlElement5});
             this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.Name = "accordionControlElement1";
-            this.accordionControlElement1.Text = "VIEW  RECORDS";
+            this.accordionControlElement1.Text = "INVENTORY MANAGEMENT";
             // 
-            // accordionControlProduct
+            // accordionControlElement3
             // 
-            this.accordionControlProduct.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlProduct.Appearance.Default.Options.UseFont = true;
-            this.accordionControlProduct.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlProduct.ImageOptions.SvgImage")));
-            this.accordionControlProduct.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
-            this.accordionControlProduct.Name = "accordionControlProduct";
-            this.accordionControlProduct.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlProduct.Text = "Product";
+            this.accordionControlElement3.Name = "accordionControlElement3";
+            this.accordionControlElement3.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement3.Text = "View Item";
+            
             // 
-            // accordionControl
+            // accordionControlElement4
             // 
-            this.accordionControl.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControl.Appearance.Default.Options.UseFont = true;
-            this.accordionControl.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControl.ImageOptions.SvgImage")));
-            this.accordionControl.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
-            this.accordionControl.Name = "accordionControl";
-            this.accordionControl.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControl.Text = "Track Expiry Date";
+            this.accordionControlElement4.Name = "accordionControlElement4";
+            this.accordionControlElement4.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement4.Text = "Add Item";
             // 
-            // accordionControlOrder
+            // accordionControlElement5
             // 
-            this.accordionControlOrder.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlOrder.Appearance.Default.Options.UseFont = true;
-            this.accordionControlOrder.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlOrder.ImageOptions.SvgImage")));
-            this.accordionControlOrder.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
-            this.accordionControlOrder.Name = "accordionControlOrder";
-            this.accordionControlOrder.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlOrder.Text = "Order";
-            // 
-            // accordionControlInventory
-            // 
-            this.accordionControlInventory.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlInventory.Appearance.Default.Options.UseFont = true;
-            this.accordionControlInventory.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlInventory.ImageOptions.SvgImage")));
-            this.accordionControlInventory.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
-            this.accordionControlInventory.Name = "accordionControlInventory";
-            this.accordionControlInventory.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlInventory.Text = "Inventory";
-            // 
-            // accordionControlSupplier
-            // 
-            this.accordionControlSupplier.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlSupplier.Appearance.Default.Options.UseFont = true;
-            this.accordionControlSupplier.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlSupplier.ImageOptions.SvgImage")));
-            this.accordionControlSupplier.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
-            this.accordionControlSupplier.Name = "accordionControlSupplier";
-            this.accordionControlSupplier.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlSupplier.Text = "Supplier";
+            this.accordionControlElement5.Name = "accordionControlElement5";
+            this.accordionControlElement5.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement5.Text = "Update Item";
             // 
             // accordionControlElement2
             // 
-            this.accordionControlElement2.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement2.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accordionControlElement2.Appearance.Default.Options.UseFont = true;
             this.accordionControlElement2.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlAddProduct});
+            this.accordionControlElement6,
+            this.accordionControlElement7});
             this.accordionControlElement2.Expanded = true;
             this.accordionControlElement2.Name = "accordionControlElement2";
-            this.accordionControlElement2.Text = "MANAGE";
+            this.accordionControlElement2.Text = "EXPIRY MANAGEMENT";
             // 
-            // accordionControlAddProduct
+            // accordionControlElement6
             // 
-            this.accordionControlAddProduct.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlAddProduct.Appearance.Default.Options.UseFont = true;
-            this.accordionControlAddProduct.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlAddProduct.ImageOptions.SvgImage")));
-            this.accordionControlAddProduct.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
-            this.accordionControlAddProduct.Name = "accordionControlAddProduct";
-            this.accordionControlAddProduct.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlAddProduct.Text = "Add Product";
-            this.accordionControlAddProduct.Click += new System.EventHandler(this.accordionControlAddProduct_Click);
+            this.accordionControlElement6.Name = "accordionControlElement6";
+            this.accordionControlElement6.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement6.Text = "View Expiry List";
+            // 
+            // accordionControlElement7
+            // 
+            this.accordionControlElement7.Name = "accordionControlElement7";
+            this.accordionControlElement7.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement7.Text = "Search Expiry Dates";
             // 
             // panelControl1
             // 
@@ -147,6 +122,54 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(917, 759);
             this.panelControl1.TabIndex = 1;
+            // 
+            // accordionControlOrder
+            // 
+            this.accordionControlOrder.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlOrder.Appearance.Default.Options.UseFont = true;
+            this.accordionControlOrder.Name = "accordionControlOrder";
+            this.accordionControlOrder.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlOrder.Tag = "";
+            this.accordionControlOrder.Text = "Order";
+            // 
+            // accordionControlElement8
+            // 
+            this.accordionControlElement8.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement8.Appearance.Default.Options.UseFont = true;
+            this.accordionControlElement8.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.accordionControlElement9,
+            this.accordionControlElement10});
+            this.accordionControlElement8.Expanded = true;
+            this.accordionControlElement8.Name = "accordionControlElement8";
+            this.accordionControlElement8.Text = "ORDER & REPORTS";
+            // 
+            // accordionControlElement9
+            // 
+            this.accordionControlElement9.Name = "accordionControlElement9";
+            this.accordionControlElement9.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement9.Text = "View Past Orders";
+            // 
+            // accordionControlElement10
+            // 
+            this.accordionControlElement10.Name = "accordionControlElement10";
+            this.accordionControlElement10.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement10.Text = "View Supply";
+            // 
+            // accordionControlElement11
+            // 
+            this.accordionControlElement11.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement11.Appearance.Default.Options.UseFont = true;
+            this.accordionControlElement11.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.accordionControlElement12});
+            this.accordionControlElement11.Expanded = true;
+            this.accordionControlElement11.Name = "accordionControlElement11";
+            this.accordionControlElement11.Text = "ALL PRODUCT";
+            // 
+            // accordionControlElement12
+            // 
+            this.accordionControlElement12.Name = "accordionControlElement12";
+            this.accordionControlElement12.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement12.Text = "Full Inventory Overview";
             // 
             // MainForm
             // 
@@ -168,13 +191,18 @@
 
         private DevExpress.XtraBars.Navigation.AccordionControl accordionControl1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement1;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlProduct;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControl;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlOrder;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlInventory;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlSupplier;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlAddProduct;
         private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlOrder;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement6;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement7;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement8;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement9;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement10;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement11;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement12;
     }
 }
