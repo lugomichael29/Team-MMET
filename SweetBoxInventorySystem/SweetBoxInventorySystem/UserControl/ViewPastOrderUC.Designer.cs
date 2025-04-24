@@ -85,27 +85,28 @@
             this.layoutControl2.Location = new System.Drawing.Point(12, 12);
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.Root = this.layoutControlGroup1;
-            this.layoutControl2.Size = new System.Drawing.Size(1156, 130);
+            this.layoutControl2.Size = new System.Drawing.Size(1156, 96);
             this.layoutControl2.TabIndex = 5;
             this.layoutControl2.Text = "layoutControl2";
             // 
             // panelControl2
             // 
             this.panelControl2.Controls.Add(this.btnBackViewPastControl);
-            this.panelControl2.Location = new System.Drawing.Point(1003, 12);
+            this.panelControl2.Location = new System.Drawing.Point(955, 12);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(141, 106);
+            this.panelControl2.Size = new System.Drawing.Size(189, 72);
             this.panelControl2.TabIndex = 5;
             // 
             // btnBackViewPastControl
             // 
             this.btnBackViewPastControl.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBackViewPastControl.Appearance.Options.UseFont = true;
+            this.btnBackViewPastControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnBackViewPastControl.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnBackViewPastControl.ImageOptions.SvgImage")));
             this.btnBackViewPastControl.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
-            this.btnBackViewPastControl.Location = new System.Drawing.Point(10, 31);
+            this.btnBackViewPastControl.Location = new System.Drawing.Point(2, 2);
             this.btnBackViewPastControl.Name = "btnBackViewPastControl";
-            this.btnBackViewPastControl.Size = new System.Drawing.Size(121, 45);
+            this.btnBackViewPastControl.Size = new System.Drawing.Size(185, 68);
             this.btnBackViewPastControl.TabIndex = 1;
             this.btnBackViewPastControl.Text = "Back";
             // 
@@ -115,14 +116,15 @@
             this.panelControl1.Controls.Add(this.pictureEdit1);
             this.panelControl1.Location = new System.Drawing.Point(12, 12);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(987, 106);
+            this.panelControl1.Size = new System.Drawing.Size(939, 72);
             this.panelControl1.TabIndex = 4;
             // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(277, 20);
+            this.labelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl1.Location = new System.Drawing.Point(2, 2);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(425, 65);
             this.labelControl1.TabIndex = 1;
@@ -134,7 +136,7 @@
             this.pictureEdit1.Location = new System.Drawing.Point(2, 2);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Size = new System.Drawing.Size(983, 102);
+            this.pictureEdit1.Size = new System.Drawing.Size(935, 68);
             this.pictureEdit1.TabIndex = 0;
             // 
             // layoutControlGroup1
@@ -145,7 +147,7 @@
             this.layoutControlItem3,
             this.layoutControlItem4});
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1156, 130);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1156, 96);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem3
@@ -153,16 +155,16 @@
             this.layoutControlItem3.Control = this.panelControl1;
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(991, 110);
+            this.layoutControlItem3.Size = new System.Drawing.Size(943, 76);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.panelControl2;
-            this.layoutControlItem4.Location = new System.Drawing.Point(991, 0);
+            this.layoutControlItem4.Location = new System.Drawing.Point(943, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(145, 110);
+            this.layoutControlItem4.Size = new System.Drawing.Size(193, 76);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
@@ -171,9 +173,9 @@
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
             this.groupControl1.Controls.Add(this.gridControlViewPastOrder);
-            this.groupControl1.Location = new System.Drawing.Point(12, 146);
+            this.groupControl1.Location = new System.Drawing.Point(12, 112);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1156, 633);
+            this.groupControl1.Size = new System.Drawing.Size(1156, 667);
             this.groupControl1.TabIndex = 4;
             this.groupControl1.Text = "View Past Order";
             // 
@@ -183,7 +185,7 @@
             this.gridControlViewPastOrder.Location = new System.Drawing.Point(2, 24);
             this.gridControlViewPastOrder.MainView = this.gridView1;
             this.gridControlViewPastOrder.Name = "gridControlViewPastOrder";
-            this.gridControlViewPastOrder.Size = new System.Drawing.Size(1152, 607);
+            this.gridControlViewPastOrder.Size = new System.Drawing.Size(1152, 641);
             this.gridControlViewPastOrder.TabIndex = 0;
             this.gridControlViewPastOrder.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -207,9 +209,9 @@
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.groupControl1;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 134);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 100);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(1160, 637);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1160, 671);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -218,7 +220,7 @@
             this.layoutControlItem2.Control = this.layoutControl2;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(1160, 134);
+            this.layoutControlItem2.Size = new System.Drawing.Size(1160, 100);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 

@@ -85,27 +85,28 @@
             this.layoutControl2.Location = new System.Drawing.Point(12, 12);
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.Root = this.layoutControlGroup1;
-            this.layoutControl2.Size = new System.Drawing.Size(1168, 130);
+            this.layoutControl2.Size = new System.Drawing.Size(1168, 95);
             this.layoutControl2.TabIndex = 5;
             this.layoutControl2.Text = "layoutControl2";
             // 
             // panelControl2
             // 
             this.panelControl2.Controls.Add(this.btnBackViewItem);
-            this.panelControl2.Location = new System.Drawing.Point(1005, 12);
+            this.panelControl2.Location = new System.Drawing.Point(960, 12);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(151, 106);
+            this.panelControl2.Size = new System.Drawing.Size(196, 71);
             this.panelControl2.TabIndex = 5;
             // 
             // btnBackViewItem
             // 
             this.btnBackViewItem.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBackViewItem.Appearance.Options.UseFont = true;
+            this.btnBackViewItem.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnBackViewItem.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnBackViewItem.ImageOptions.SvgImage")));
             this.btnBackViewItem.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
-            this.btnBackViewItem.Location = new System.Drawing.Point(15, 31);
+            this.btnBackViewItem.Location = new System.Drawing.Point(2, 2);
             this.btnBackViewItem.Name = "btnBackViewItem";
-            this.btnBackViewItem.Size = new System.Drawing.Size(121, 45);
+            this.btnBackViewItem.Size = new System.Drawing.Size(192, 67);
             this.btnBackViewItem.TabIndex = 2;
             this.btnBackViewItem.Text = "Back";
             // 
@@ -115,14 +116,15 @@
             this.panelControl1.Controls.Add(this.pictureEdit1);
             this.panelControl1.Location = new System.Drawing.Point(12, 12);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(989, 106);
+            this.panelControl1.Size = new System.Drawing.Size(944, 71);
             this.panelControl1.TabIndex = 4;
             // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(390, 17);
+            this.labelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl1.Location = new System.Drawing.Point(2, 2);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(249, 65);
             this.labelControl1.TabIndex = 1;
@@ -134,7 +136,7 @@
             this.pictureEdit1.Location = new System.Drawing.Point(2, 2);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Size = new System.Drawing.Size(985, 102);
+            this.pictureEdit1.Size = new System.Drawing.Size(940, 67);
             this.pictureEdit1.TabIndex = 0;
             // 
             // layoutControlGroup1
@@ -145,7 +147,7 @@
             this.layoutControlItem3,
             this.layoutControlItem4});
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1168, 130);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1168, 95);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem3
@@ -153,16 +155,16 @@
             this.layoutControlItem3.Control = this.panelControl1;
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(993, 110);
+            this.layoutControlItem3.Size = new System.Drawing.Size(948, 75);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.panelControl2;
-            this.layoutControlItem4.Location = new System.Drawing.Point(993, 0);
+            this.layoutControlItem4.Location = new System.Drawing.Point(948, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(155, 110);
+            this.layoutControlItem4.Size = new System.Drawing.Size(200, 75);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
@@ -171,9 +173,9 @@
             this.groupControlViewItem.AppearanceCaption.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupControlViewItem.AppearanceCaption.Options.UseFont = true;
             this.groupControlViewItem.Controls.Add(this.gridControlViewItem);
-            this.groupControlViewItem.Location = new System.Drawing.Point(12, 146);
+            this.groupControlViewItem.Location = new System.Drawing.Point(12, 111);
             this.groupControlViewItem.Name = "groupControlViewItem";
-            this.groupControlViewItem.Size = new System.Drawing.Size(1168, 733);
+            this.groupControlViewItem.Size = new System.Drawing.Size(1168, 768);
             this.groupControlViewItem.TabIndex = 4;
             this.groupControlViewItem.Text = "View Item";
             // 
@@ -183,7 +185,7 @@
             this.gridControlViewItem.Location = new System.Drawing.Point(2, 24);
             this.gridControlViewItem.MainView = this.gridView1;
             this.gridControlViewItem.Name = "gridControlViewItem";
-            this.gridControlViewItem.Size = new System.Drawing.Size(1164, 707);
+            this.gridControlViewItem.Size = new System.Drawing.Size(1164, 742);
             this.gridControlViewItem.TabIndex = 0;
             this.gridControlViewItem.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -207,9 +209,9 @@
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.groupControlViewItem;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 134);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 99);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(1172, 737);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1172, 772);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -218,7 +220,7 @@
             this.layoutControlItem2.Control = this.layoutControl2;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(1172, 134);
+            this.layoutControlItem2.Size = new System.Drawing.Size(1172, 99);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
