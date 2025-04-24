@@ -43,8 +43,8 @@
             this.AcFullInventoryOverview = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator1 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.panelControlmainForm = new DevExpress.XtraEditors.PanelControl();
-            this.accordionControlOrder = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.panelControlViewItem = new DevExpress.XtraEditors.PanelControl();
+            this.accordionControlOrder = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControlmainForm)).BeginInit();
             this.panelControlmainForm.SuspendLayout();
@@ -190,6 +190,14 @@
             this.panelControlmainForm.Size = new System.Drawing.Size(977, 768);
             this.panelControlmainForm.TabIndex = 1;
             // 
+            // panelControlViewItem
+            // 
+            this.panelControlViewItem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControlViewItem.Location = new System.Drawing.Point(2, 2);
+            this.panelControlViewItem.Name = "panelControlViewItem";
+            this.panelControlViewItem.Size = new System.Drawing.Size(973, 764);
+            this.panelControlViewItem.TabIndex = 0;
+            // 
             // accordionControlOrder
             // 
             this.accordionControlOrder.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -198,14 +206,6 @@
             this.accordionControlOrder.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlOrder.Tag = "";
             this.accordionControlOrder.Text = "Order";
-            // 
-            // panelControlViewItem
-            // 
-            this.panelControlViewItem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControlViewItem.Location = new System.Drawing.Point(2, 2);
-            this.panelControlViewItem.Name = "panelControlViewItem";
-            this.panelControlViewItem.Size = new System.Drawing.Size(973, 764);
-            this.panelControlViewItem.TabIndex = 0;
             // 
             // MainForm
             // 
