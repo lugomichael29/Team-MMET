@@ -32,13 +32,13 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnUpdateItem = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.texUpdateQuantity = new DevExpress.XtraEditors.TextEdit();
+            this.texDateUpdate = new DevExpress.XtraEditors.TextEdit();
+            this.texItemName = new DevExpress.XtraEditors.TextEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -53,9 +53,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.texUpdateQuantity.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.texDateUpdate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.texItemName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
@@ -94,25 +94,27 @@
             // 
             // panelControl2
             // 
-            this.panelControl2.Controls.Add(this.simpleButton1);
+            this.panelControl2.Controls.Add(this.btnUpdateItem);
             this.panelControl2.Controls.Add(this.labelControl5);
             this.panelControl2.Controls.Add(this.labelControl4);
             this.panelControl2.Controls.Add(this.labelControl1);
-            this.panelControl2.Controls.Add(this.textEdit3);
-            this.panelControl2.Controls.Add(this.textEdit2);
-            this.panelControl2.Controls.Add(this.textEdit1);
+            this.panelControl2.Controls.Add(this.texUpdateQuantity);
+            this.panelControl2.Controls.Add(this.texDateUpdate);
+            this.panelControl2.Controls.Add(this.texItemName);
             this.panelControl2.Location = new System.Drawing.Point(12, 85);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(1156, 99);
             this.panelControl2.TabIndex = 5;
             // 
-            // simpleButton1
+            // btnUpdateItem
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(689, 46);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(144, 32);
-            this.simpleButton1.TabIndex = 8;
-            this.simpleButton1.Text = "simpleButton1";
+            this.btnUpdateItem.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateItem.Appearance.Options.UseFont = true;
+            this.btnUpdateItem.Location = new System.Drawing.Point(689, 46);
+            this.btnUpdateItem.Name = "btnUpdateItem";
+            this.btnUpdateItem.Size = new System.Drawing.Size(144, 32);
+            this.btnUpdateItem.TabIndex = 8;
+            this.btnUpdateItem.Text = "Update";
             // 
             // labelControl5
             // 
@@ -147,26 +149,26 @@
             this.labelControl1.TabIndex = 3;
             this.labelControl1.Text = "Item Name:";
             // 
-            // textEdit3
+            // texUpdateQuantity
             // 
-            this.textEdit3.Location = new System.Drawing.Point(579, 20);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(254, 20);
-            this.textEdit3.TabIndex = 2;
+            this.texUpdateQuantity.Location = new System.Drawing.Point(579, 20);
+            this.texUpdateQuantity.Name = "texUpdateQuantity";
+            this.texUpdateQuantity.Size = new System.Drawing.Size(254, 20);
+            this.texUpdateQuantity.TabIndex = 2;
             // 
-            // textEdit2
+            // texDateUpdate
             // 
-            this.textEdit2.Location = new System.Drawing.Point(124, 43);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(254, 20);
-            this.textEdit2.TabIndex = 1;
+            this.texDateUpdate.Location = new System.Drawing.Point(124, 43);
+            this.texDateUpdate.Name = "texDateUpdate";
+            this.texDateUpdate.Size = new System.Drawing.Size(254, 20);
+            this.texDateUpdate.TabIndex = 1;
             // 
-            // textEdit1
+            // texItemName
             // 
-            this.textEdit1.Location = new System.Drawing.Point(123, 16);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(254, 20);
-            this.textEdit1.TabIndex = 0;
+            this.texItemName.Location = new System.Drawing.Point(123, 16);
+            this.texItemName.Name = "texItemName";
+            this.texItemName.Size = new System.Drawing.Size(254, 20);
+            this.texItemName.TabIndex = 0;
             // 
             // panelControl1
             // 
@@ -260,9 +262,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.texUpdateQuantity.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.texDateUpdate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.texItemName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
@@ -283,16 +285,16 @@
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit texUpdateQuantity;
+        private DevExpress.XtraEditors.TextEdit texDateUpdate;
+        private DevExpress.XtraEditors.TextEdit texItemName;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btnUpdateItem;
         private DevExpress.XtraEditors.LabelControl labelControl6;
     }
 }

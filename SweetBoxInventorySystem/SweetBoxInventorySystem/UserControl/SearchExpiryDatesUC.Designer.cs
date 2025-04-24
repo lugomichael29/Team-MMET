@@ -32,7 +32,7 @@
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.btnSearchExpiry = new DevExpress.XtraEditors.SimpleButton();
             this.texDateExpiry = new DevExpress.XtraEditors.TextEdit();
-            this.texItemName = new DevExpress.XtraEditors.TextEdit();
+            this.texItemNameSearchExpiryDate = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
@@ -48,7 +48,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.texDateExpiry.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.texItemName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.texItemNameSearchExpiryDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
@@ -76,7 +76,7 @@
             // 
             this.panelControl3.Controls.Add(this.btnSearchExpiry);
             this.panelControl3.Controls.Add(this.texDateExpiry);
-            this.panelControl3.Controls.Add(this.texItemName);
+            this.panelControl3.Controls.Add(this.texItemNameSearchExpiryDate);
             this.panelControl3.Controls.Add(this.labelControl2);
             this.panelControl3.Controls.Add(this.labelControl1);
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -102,12 +102,12 @@
             this.texDateExpiry.Size = new System.Drawing.Size(239, 20);
             this.texDateExpiry.TabIndex = 3;
             // 
-            // texItemName
+            // texItemNameSearchExpiryDate
             // 
-            this.texItemName.Location = new System.Drawing.Point(104, 23);
-            this.texItemName.Name = "texItemName";
-            this.texItemName.Size = new System.Drawing.Size(239, 20);
-            this.texItemName.TabIndex = 2;
+            this.texItemNameSearchExpiryDate.Location = new System.Drawing.Point(104, 23);
+            this.texItemNameSearchExpiryDate.Name = "texItemNameSearchExpiryDate";
+            this.texItemNameSearchExpiryDate.Size = new System.Drawing.Size(239, 20);
+            this.texItemNameSearchExpiryDate.TabIndex = 2;
             // 
             // labelControl2
             // 
@@ -218,7 +218,7 @@
             this.panelControl3.ResumeLayout(false);
             this.panelControl3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.texDateExpiry.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.texItemName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.texItemNameSearchExpiryDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
@@ -238,7 +238,7 @@
         private DevExpress.XtraEditors.PanelControl panelControl3;
         private DevExpress.XtraEditors.SimpleButton btnSearchExpiry;
         private DevExpress.XtraEditors.TextEdit texDateExpiry;
-        private DevExpress.XtraEditors.TextEdit texItemName;
+        private DevExpress.XtraEditors.TextEdit texItemNameSearchExpiryDate;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.PanelControl panelControl1;
