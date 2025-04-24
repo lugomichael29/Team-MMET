@@ -64,9 +64,52 @@
     </Compile>
     <Compile Include="Models\Cake.cs" />
     <Compile Include="Models\Coffee.cs" />
+    <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl\AddItemUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\AddItemUC.Designer.cs">
+      <DependentUpon>AddItemUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\FullInventoryOverviewUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\FullInventoryOverviewUC.Designer.cs">
+      <DependentUpon>FullInventoryOverviewUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\SearchExpiryDatesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\SearchExpiryDatesUC.Designer.cs">
+      <DependentUpon>SearchExpiryDatesUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UpdateItemUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UpdateItemUC.Designer.cs">
+      <DependentUpon>UpdateItemUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ViewItemUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\ViewItemUC.Designer.cs">
+      <DependentUpon>ViewItemUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ViewPastOrderUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\ViewPastOrderUC.Designer.cs">
+      <DependentUpon>ViewPastOrderUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ViewSupplyUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\ViewSupplyUC.Designer.cs">
+      <DependentUpon>ViewSupplyUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinForms\LogInForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +135,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControl\ViewSupplyUC.resx">
+      <DependentUpon>ViewSupplyUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WinForms\LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,7 +161,6 @@
   <ItemGroup>
     <Folder Include="NewFolder1\" />
     <Folder Include="Reports\" />
-    <Folder Include="UserControl\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
