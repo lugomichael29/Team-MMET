@@ -29,7 +29,7 @@ namespace SweetBoxInventorySystem.Models
         public string TogoBags { get; set; }
 
         public Item(int productId, string productName, decimal productPrice, int productQuantity, 
-            DateTime expiryDate, string productType, string syrupPumps , string cups, string lidsAndSleeves,
+            DateTime expiryDate, string syrupPumps , string cups, string lidsAndSleeves,
             string stirrers, string straws, string napkins, string sugarPackets, string creamers, string togoBags) :
            base(productId, productName, productPrice, productQuantity, expiryDate)
         {

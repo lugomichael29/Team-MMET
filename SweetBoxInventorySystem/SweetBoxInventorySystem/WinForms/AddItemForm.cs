@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SweetBoxInventorySystem.UserControl
+namespace SweetBoxInventorySystem.WinForms
 {
-    public partial class AddItemUC : DevExpress.XtraEditors.XtraUserControl
+    public partial class AddItemForm : DevExpress.XtraEditors.XtraForm
     {
-        public AddItemUC()
+        public AddItemForm()
         {
             InitializeComponent();
         }

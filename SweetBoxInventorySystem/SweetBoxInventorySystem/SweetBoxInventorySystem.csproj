@@ -135,6 +135,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControl\AddItemUC.resx">
+      <DependentUpon>AddItemUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\FullInventoryOverviewUC.resx">
+      <DependentUpon>FullInventoryOverviewUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\ViewItemUC.resx">
+      <DependentUpon>ViewItemUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\ViewPastOrderUC.resx">
+      <DependentUpon>ViewPastOrderUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\ViewSupplyUC.resx">
       <DependentUpon>ViewSupplyUC.cs</DependentUpon>
     </EmbeddedResource>
