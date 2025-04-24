@@ -73,5 +73,10 @@ namespace SweetBoxInventorySystem.WinForms
             panelControlmainForm.Controls.Clear();
             panelControlmainForm.Controls.Add(fullInventoryOverview);
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -17,5 +17,10 @@ namespace SweetBoxInventorySystem.UserControl
         {
             InitializeComponent();
         }
+
+        private void ViewItemUC_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -84,7 +84,7 @@
             this.panelControl1.Controls.Add(this.labelControl1);
             this.panelControl1.Location = new System.Drawing.Point(12, 12);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1144, 71);
+            this.panelControl1.Size = new System.Drawing.Size(1144, 69);
             this.panelControl1.TabIndex = 4;
             // 
             // labelControl1
@@ -183,6 +183,7 @@
             this.Controls.Add(this.layoutControl1);
             this.Name = "ViewItemUC";
             this.Size = new System.Drawing.Size(1192, 891);
+            this.Load += new System.EventHandler(this.ViewItemUC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).EndInit();
