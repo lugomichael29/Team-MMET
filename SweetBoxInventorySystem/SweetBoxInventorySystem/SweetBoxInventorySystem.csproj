@@ -68,12 +68,6 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControl\AddItemUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\AddItemUC.Designer.cs">
-      <DependentUpon>AddItemUC.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControl\FullInventoryOverviewUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -110,6 +104,12 @@
     <Compile Include="UserControl\ViewSupplyUC.Designer.cs">
       <DependentUpon>ViewSupplyUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinForms\AddItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\AddItemForm.Designer.cs">
+      <DependentUpon>AddItemForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinForms\LogInForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,11 +135,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserControl\AddItemUC.resx">
-      <DependentUpon>AddItemUC.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\FullInventoryOverviewUC.resx">
       <DependentUpon>FullInventoryOverviewUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\SearchExpiryDatesUC.resx">
+      <DependentUpon>SearchExpiryDatesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UpdateItemUC.resx">
+      <DependentUpon>UpdateItemUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\ViewItemUC.resx">
       <DependentUpon>ViewItemUC.cs</DependentUpon>
@@ -149,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\ViewSupplyUC.resx">
       <DependentUpon>ViewSupplyUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\AddItemForm.resx">
+      <DependentUpon>AddItemForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinForms\LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
