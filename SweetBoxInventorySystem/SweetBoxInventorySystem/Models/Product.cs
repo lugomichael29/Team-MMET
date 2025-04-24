@@ -9,7 +9,7 @@ namespace SweetBoxInventorySystem.Models
 {
     public abstract class Product
     {
-        // Encapsulated fields
+       
         public int ProductId { get; set; }
         public string ProductName { get; set; }
         public decimal ProductPrice { get; set; }
