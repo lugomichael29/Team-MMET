@@ -9,33 +9,61 @@ namespace SweetBoxInventorySystem.Models
 {
     public abstract class Product
     {
-       
-        public int ProductId { get; set; }
-        public string ProductName { get; set; }
-        public decimal ProductPrice { get; set; }
-        public int ProductQuantity { get; set; }
-        public DateTime ExpiryDate { get; set; }
+        // Private fields to encapsulate data
+        private int productId;
+        private string productName;
+        private int productQuantity;
+        private DateTime expiryDate;
 
+        // Public properties with validation
+        public int ProductId
+        {
+            get { return productId; }
+            private set { productId = value; } // Ensure ProductId cannot be changed after creation
+        }
 
+        public string ProductName
+        {
+            get { return productName; }
+            private set { productName = value ?? throw new ArgumentNullException(nameof(ProductName), "Product name cannot be null."); }
+        }
 
-        public Product(int productId, string productName, decimal productPrice, int productQuantity, DateTime expiryDate )
+        public int ProductQuantity
+        {
+            get { return productQuantity; }
+            set
+            {
+                if (value < 0) throw new ArgumentOutOfRangeException(nameof(ProductQuantity), "Quantity cannot be negative.");
+                productQuantity = value;
+            }
+        }
+
+        public DateTime ExpiryDate
+        {
+            get { return expiryDate; }
+            set
+            {
+                if (value < DateTime.Now) throw new ArgumentException("Expiry date cannot be in the past.", nameof(ExpiryDate));
+                expiryDate = value;
+            }
+        }
+
+        // Constructor to initialize the properties
+        public Product(int productId, string productName, int productQuantity, DateTime expiryDate)
         {
             ProductId = productId;
             ProductName = productName;
-            ProductPrice = productPrice;
             ProductQuantity = productQuantity;
             ExpiryDate = expiryDate;
         }
 
-
-
-        // Abstract method for each product to provide their own details
+        // Abstract method for product details to be implemented by subclasses
         public abstract string GetProductInfo();
 
-        // Override ToString to give a clean product display
+        // Override ToString to provide clean product display
         public override string ToString()
         {
-            return $"{ProductName} - ${ProductPrice} | {GetProductInfo()}";
+            return $"{ProductName} - {GetProductInfo()}";
         }
     }
 }
