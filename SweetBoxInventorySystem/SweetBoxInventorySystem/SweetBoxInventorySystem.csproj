@@ -142,6 +142,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UserControl\FullInventoryOverviewUC.resx">
       <DependentUpon>FullInventoryOverviewUC.cs</DependentUpon>
@@ -180,6 +181,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\Sweet Box %281%29.png" />
+    <None Include="Resources\Sweet Box %282%29.png" />
     <Content Include="SweetBoxInventorySystem.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

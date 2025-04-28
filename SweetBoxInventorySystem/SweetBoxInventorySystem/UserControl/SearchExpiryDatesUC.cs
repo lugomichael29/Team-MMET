@@ -17,5 +17,7 @@ namespace SweetBoxInventorySystem.UserControl
         {
             InitializeComponent();
         }
+
+        
     }
 }
