@@ -46,5 +46,10 @@ namespace SweetBoxInventorySystem.WinForms
         {
 
         }
+
+        private void texUserName_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

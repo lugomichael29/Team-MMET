@@ -70,7 +70,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Coffee.cs" />
     <Compile Include="Models\Ingredients.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Product.cs" />

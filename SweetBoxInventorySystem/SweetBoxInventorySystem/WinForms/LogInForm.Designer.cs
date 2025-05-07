@@ -56,6 +56,7 @@
             this.texUserName.Properties.UseAdvancedMode = DevExpress.Utils.DefaultBoolean.True;
             this.texUserName.Size = new System.Drawing.Size(240, 42);
             this.texUserName.TabIndex = 4;
+            this.texUserName.EditValueChanged += new System.EventHandler(this.texUserName_EditValueChanged);
             // 
             // texPassword
             // 
