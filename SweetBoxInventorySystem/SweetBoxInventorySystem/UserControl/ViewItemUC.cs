@@ -8,19 +8,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Dapper;
+using System.Data.SQLite;
 
 namespace SweetBoxInventorySystem.UserControl
 {
     public partial class ViewItemUC : DevExpress.XtraEditors.XtraUserControl
     {
+        private readonly string _connectionString = @"Data Source=.\SweetBoxInventorySystem.db;Version=3;";
         public ViewItemUC()
         {
             InitializeComponent();
         }
 
+        
+
         private void ViewItemUC_Load(object sender, EventArgs e)
         {
+            using (var connection = new SQLiteConnection(_connectionString)) {
+                var selectFromDB = connection.Query("SELECT * FROM Products").ToList();
+                gridControlViewItem.DataSource = selectFromDB;
+            }
+                
+        }
 
+        private void gridControlViewItem_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

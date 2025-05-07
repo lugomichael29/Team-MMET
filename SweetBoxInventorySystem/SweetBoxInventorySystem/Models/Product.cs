@@ -14,6 +14,7 @@ namespace SweetBoxInventorySystem.Models
         private string productName;
         private int productQuantity;
         private DateTime expiryDate;
+        List<Ingredients> ingredientList { get; set; }
 
         // Public properties with validation
         public int ProductId

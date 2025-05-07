@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
+            this.Lc_FilterViewItem = new DevExpress.XtraLayout.LayoutControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.lcViewItem = new DevExpress.XtraEditors.LabelControl();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.groupControlViewItem = new DevExpress.XtraEditors.GroupControl();
             this.gridControlViewItem = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gcProductID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gcProductName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gcQuantity = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gcDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).BeginInit();
-            this.layoutControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Lc_FilterViewItem)).BeginInit();
+            this.Lc_FilterViewItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
@@ -63,7 +63,7 @@
             // 
             // layoutControl1
             // 
-            this.layoutControl1.Controls.Add(this.layoutControl2);
+            this.layoutControl1.Controls.Add(this.Lc_FilterViewItem);
             this.layoutControl1.Controls.Add(this.groupControlViewItem);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
@@ -73,37 +73,37 @@
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
-            // layoutControl2
+            // Lc_FilterViewItem
             // 
-            this.layoutControl2.Controls.Add(this.panelControl1);
-            this.layoutControl2.Location = new System.Drawing.Point(12, 12);
-            this.layoutControl2.Name = "layoutControl2";
-            this.layoutControl2.Root = this.layoutControlGroup1;
-            this.layoutControl2.Size = new System.Drawing.Size(1168, 95);
-            this.layoutControl2.TabIndex = 5;
-            this.layoutControl2.Text = "layoutControl2";
+            this.Lc_FilterViewItem.Controls.Add(this.panelControl1);
+            this.Lc_FilterViewItem.Location = new System.Drawing.Point(12, 12);
+            this.Lc_FilterViewItem.Name = "Lc_FilterViewItem";
+            this.Lc_FilterViewItem.Root = this.layoutControlGroup1;
+            this.Lc_FilterViewItem.Size = new System.Drawing.Size(1168, 95);
+            this.Lc_FilterViewItem.TabIndex = 5;
+            this.Lc_FilterViewItem.Text = "layoutControl2";
             // 
             // panelControl1
             // 
-            this.panelControl1.Controls.Add(this.labelControl1);
+            this.panelControl1.Controls.Add(this.lcViewItem);
             this.panelControl1.Location = new System.Drawing.Point(12, 12);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(1144, 69);
             this.panelControl1.TabIndex = 4;
             // 
-            // labelControl1
+            // lcViewItem
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Appearance.Options.UseTextOptions = true;
-            this.labelControl1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
-            this.labelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl1.Location = new System.Drawing.Point(2, 2);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(1140, 65);
-            this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "VIEW ITEM";
+            this.lcViewItem.Appearance.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lcViewItem.Appearance.Options.UseFont = true;
+            this.lcViewItem.Appearance.Options.UseTextOptions = true;
+            this.lcViewItem.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lcViewItem.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
+            this.lcViewItem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lcViewItem.Location = new System.Drawing.Point(2, 2);
+            this.lcViewItem.Name = "lcViewItem";
+            this.lcViewItem.Size = new System.Drawing.Size(1140, 65);
+            this.lcViewItem.TabIndex = 1;
+            this.lcViewItem.Text = "VIEW ITEM";
             // 
             // layoutControlGroup1
             // 
@@ -145,16 +145,51 @@
             this.gridControlViewItem.TabIndex = 0;
             this.gridControlViewItem.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControlViewItem.Load += new System.EventHandler(this.gridControlViewItem_Load);
             // 
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4});
+            this.gcProductID,
+            this.gcProductName,
+            this.gcQuantity,
+            this.gcDate});
             this.gridView1.GridControl = this.gridControlViewItem;
             this.gridView1.Name = "gridView1";
+            // 
+            // gcProductID
+            // 
+            this.gcProductID.Caption = "Product ID";
+            this.gcProductID.FieldName = "ProductID";
+            this.gcProductID.Name = "gcProductID";
+            this.gcProductID.Visible = true;
+            this.gcProductID.VisibleIndex = 0;
+            this.gcProductID.Width = 62;
+            // 
+            // gcProductName
+            // 
+            this.gcProductName.Caption = "Product Name";
+            this.gcProductName.FieldName = "ProductName";
+            this.gcProductName.Name = "gcProductName";
+            this.gcProductName.Visible = true;
+            this.gcProductName.VisibleIndex = 1;
+            this.gcProductName.Width = 360;
+            // 
+            // gcQuantity
+            // 
+            this.gcQuantity.Caption = "Quantity";
+            this.gcQuantity.Name = "gcQuantity";
+            this.gcQuantity.Visible = true;
+            this.gcQuantity.VisibleIndex = 2;
+            this.gcQuantity.Width = 360;
+            // 
+            // gcDate
+            // 
+            this.gcDate.Caption = "Date";
+            this.gcDate.Name = "gcDate";
+            this.gcDate.Visible = true;
+            this.gcDate.VisibleIndex = 3;
+            this.gcDate.Width = 365;
             // 
             // Root
             // 
@@ -178,44 +213,12 @@
             // 
             // layoutControlItem2
             // 
-            this.layoutControlItem2.Control = this.layoutControl2;
+            this.layoutControlItem2.Control = this.Lc_FilterViewItem;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(1172, 99);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.Caption = "Product ID";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 62;
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.Caption = "Product Name";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 360;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.Caption = "Quantity";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
-            this.gridColumn3.Width = 360;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.Caption = "Date";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
-            this.gridColumn4.Width = 365;
             // 
             // ViewItemUC
             // 
@@ -227,8 +230,8 @@
             this.Load += new System.EventHandler(this.ViewItemUC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).EndInit();
-            this.layoutControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Lc_FilterViewItem)).EndInit();
+            this.Lc_FilterViewItem.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
@@ -248,9 +251,9 @@
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.XtraLayout.LayoutControlGroup Root;
-        private DevExpress.XtraLayout.LayoutControl layoutControl2;
+        private DevExpress.XtraLayout.LayoutControl Lc_FilterViewItem;
         private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl lcViewItem;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraEditors.GroupControl groupControlViewItem;
@@ -258,9 +261,9 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraGrid.Columns.GridColumn gcProductID;
+        private DevExpress.XtraGrid.Columns.GridColumn gcProductName;
+        private DevExpress.XtraGrid.Columns.GridColumn gcQuantity;
+        private DevExpress.XtraGrid.Columns.GridColumn gcDate;
     }
 }

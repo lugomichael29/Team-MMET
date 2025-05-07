@@ -33,6 +33,7 @@ namespace SweetBoxInventorySystem.Models
         public string ChocolatePowder { get; set; }
         public string FrappeBasePowder { get; set; }
         public string Fructose { get; set; }
+        public string CreamerPowder { get; set; }
 
 
 
@@ -45,8 +46,8 @@ namespace SweetBoxInventorySystem.Models
         string vanillaSyrup, string caramelSyrup, string saltedCaramelSyrup,
         string cheeseCakeSyrup, string hazelNutSyrup,
         string vanilaPowder, string strawberryPowder, string matchaPowder,
-        string chocolatePowder, string frappeBasePowder, string fructose
-    ) : base(productId, productName, productQuantity, expiryDate)
+        string chocolatePowder, string frappeBasePowder, string fructose, string creamerPowder)
+            : base(productId, productName, productQuantity, expiryDate)
         {
             BeanType = beanType;
             Milk = milk;
@@ -67,6 +68,7 @@ namespace SweetBoxInventorySystem.Models
             ChocolatePowder = chocolatePowder;
             FrappeBasePowder = frappeBasePowder;
             Fructose = fructose;
+            CreamerPowder = creamerPowder;
         }
         public override string GetProductInfo()
         {
