@@ -39,7 +39,6 @@
             this.accordionControlSeparator2 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.accordionControlElement8 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.AcViewPastOrders = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.AcViewSupply = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement11 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.AcFullInventoryOverview = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator1 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
@@ -144,8 +143,7 @@
             this.accordionControlElement8.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accordionControlElement8.Appearance.Default.Options.UseFont = true;
             this.accordionControlElement8.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.AcViewPastOrders,
-            this.AcViewSupply});
+            this.AcViewPastOrders});
             this.accordionControlElement8.Expanded = true;
             this.accordionControlElement8.Name = "accordionControlElement8";
             this.accordionControlElement8.Text = "ORDER & REPORTS";
@@ -158,15 +156,6 @@
             this.AcViewPastOrders.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.AcViewPastOrders.Text = "View Past Orders";
             this.AcViewPastOrders.Click += new System.EventHandler(this.AcViewPastOrders_Click);
-            // 
-            // AcViewSupply
-            // 
-            this.AcViewSupply.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AcViewSupply.Appearance.Default.Options.UseFont = true;
-            this.AcViewSupply.Name = "AcViewSupply";
-            this.AcViewSupply.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.AcViewSupply.Text = "View Supply";
-            this.AcViewSupply.Click += new System.EventHandler(this.AcViewSupply_Click);
             // 
             // accordionControlElement11
             // 
@@ -250,7 +239,6 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement AcSearchExpiryDates;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement8;
         private DevExpress.XtraBars.Navigation.AccordionControlElement AcViewPastOrders;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement AcViewSupply;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement11;
         private DevExpress.XtraBars.Navigation.AccordionControlElement AcFullInventoryOverview;
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator2;

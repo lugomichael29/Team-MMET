@@ -60,10 +60,10 @@ namespace SweetBoxInventorySystem.WinForms
 
         private void AcViewSupply_Click(object sender, EventArgs e)
         {
-            ViewSupplyUC viewSupply = new ViewSupplyUC();
-            viewSupply.Dock = DockStyle.Fill;
+            //ViewSupplyUC viewSupply = new ViewSupplyUC();
+            //viewSupply.Dock = DockStyle.Fill;
             panelControlmainForm.Controls.Clear();
-            panelControlmainForm.Controls.Add(viewSupply);
+            //panelControlmainForm.Controls.Add(viewSupply);
         }
 
         private void AcFullInventoryOverview_Click(object sender, EventArgs e)

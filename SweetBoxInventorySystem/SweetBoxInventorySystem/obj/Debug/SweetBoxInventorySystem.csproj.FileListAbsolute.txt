@@ -52,7 +52,6 @@ C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInvent
 C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\obj\Debug\SweetBoxInventorySystem.UserControl.UpdateItemUC.resources
 C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\obj\Debug\SweetBoxInventorySystem.UserControl.ViewItemUC.resources
 C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\obj\Debug\SweetBoxInventorySystem.UserControl.ViewPastOrderUC.resources
-C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\obj\Debug\SweetBoxInventorySystem.UserControl.ViewSupplyUC.resources
 C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\obj\Debug\SweetBoxInventorySystem.WinForms.AddItemForm.resources
 C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\bin\Debug\Dapper.dll
 C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll

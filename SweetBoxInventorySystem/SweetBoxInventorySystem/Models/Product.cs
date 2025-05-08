@@ -15,7 +15,7 @@ namespace SweetBoxInventorySystem.Models
         private int productQuantity;
         private string expiryDate = DateTime.Now.Date.ToString("yyyy-MM-dd");
 
-
+        
         // Public properties with validation
         public int ProductId
         {
@@ -45,11 +45,10 @@ namespace SweetBoxInventorySystem.Models
 
         public string ExpiryDate
         {
-            get { return expiryDate; }
-            set { expiryDate = value; }
+            get;set;
         }
 
-        
+
 
         // Abstract method for product details to be implemented by subclasses
         public abstract string GetProductInfo();

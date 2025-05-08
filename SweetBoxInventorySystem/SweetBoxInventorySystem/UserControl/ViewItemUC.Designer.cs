@@ -178,6 +178,7 @@
             // gcQuantity
             // 
             this.gcQuantity.Caption = "Quantity";
+            this.gcQuantity.FieldName = "ProductQuantity";
             this.gcQuantity.Name = "gcQuantity";
             this.gcQuantity.Visible = true;
             this.gcQuantity.VisibleIndex = 2;
@@ -186,6 +187,7 @@
             // gcDate
             // 
             this.gcDate.Caption = "Date";
+            this.gcDate.FieldName = "BoughtDate";
             this.gcDate.Name = "gcDate";
             this.gcDate.Visible = true;
             this.gcDate.VisibleIndex = 3;

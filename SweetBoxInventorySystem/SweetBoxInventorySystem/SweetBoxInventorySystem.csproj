@@ -122,12 +122,6 @@
     <Compile Include="UserControl\ViewPastOrderUC.Designer.cs">
       <DependentUpon>ViewPastOrderUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\ViewSupplyUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\ViewSupplyUC.Designer.cs">
-      <DependentUpon>ViewSupplyUC.cs</DependentUpon>
-    </Compile>
     <Compile Include="WinForms\AddIngredientsType.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,9 +174,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\ViewPastOrderUC.resx">
       <DependentUpon>ViewPastOrderUC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\ViewSupplyUC.resx">
-      <DependentUpon>ViewSupplyUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinForms\AddIngredientsType.resx">
       <DependentUpon>AddIngredientsType.cs</DependentUpon>
