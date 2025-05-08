@@ -106,7 +106,7 @@
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(1131, 47);
             this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "FULL INVENTORY OVERVIEW";
+            this.labelControl1.Text = "INVENTORY OVERVIEW";
             // 
             // layoutControlGroup1
             // 

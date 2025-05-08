@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,25 +20,21 @@ namespace SweetBoxInventorySystem.WinForms
             InitializeComponent();
         }
 
+        private readonly string _connectionString = @"Data Source=.\SweetBoxInventorySystem.db;Version=3;";
+
         private void btnAddItem_Click(object sender, EventArgs e)
         {
-            string userChoice = cbChooseProduct.SelectedItem.ToString();
+            //string userChoice = cbChooseProduct.SelectedItem.ToString();
             string supplyName = texSupplyName.Text;
             string quantity =  texQuantity.Text;
             string itemDate = dateAddDateItem.Text;
 
-            if (string.IsNullOrEmpty(userChoice) || string.IsNullOrEmpty(supplyName) || string.IsNullOrEmpty(quantity) || string.IsNullOrEmpty(itemDate)) { 
+            if (string.IsNullOrEmpty(supplyName) || string.IsNullOrEmpty(quantity) || string.IsNullOrEmpty(itemDate)) { 
                 XtraMessageBox.Show("Please fill up all the fields!","Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            if (userChoice == "Item")
-            {
-
-            }
-            else if (userChoice == "Ingredients") { 
             
-            }
         }
 
         private void cbChooseProduct_SelectedIndexChanged(object sender, EventArgs e)

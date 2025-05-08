@@ -54,3 +54,14 @@ C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInvent
 C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\obj\Debug\SweetBoxInventorySystem.UserControl.ViewPastOrderUC.resources
 C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\obj\Debug\SweetBoxInventorySystem.UserControl.ViewSupplyUC.resources
 C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\obj\Debug\SweetBoxInventorySystem.WinForms.AddItemForm.resources
+C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\bin\Debug\Dapper.dll
+C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\bin\Debug\System.Data.SQLite.dll
+C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\bin\Debug\Dapper.xml
+C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\bin\Debug\System.Data.SQLite.xml
+C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\2023-0428\source\repos\Team-MMET\SweetBoxInventorySystem\SweetBoxInventorySystem\obj\Debug\SweetBoxInventorySystem.WinForms.AddIngredientsType.resources

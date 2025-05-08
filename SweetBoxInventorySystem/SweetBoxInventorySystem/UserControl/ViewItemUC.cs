@@ -26,7 +26,7 @@ namespace SweetBoxInventorySystem.UserControl
         private void ViewItemUC_Load(object sender, EventArgs e)
         {
             using (var connection = new SQLiteConnection(_connectionString)) {
-                var selectFromDB = connection.Query("SELECT * FROM Products").ToList();
+                var selectFromDB = connection.Query("SELECT * FROM Product").ToList();
                 gridControlViewItem.DataSource = selectFromDB;
             }
                 

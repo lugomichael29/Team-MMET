@@ -160,7 +160,7 @@
             // gcProductID
             // 
             this.gcProductID.Caption = "Product ID";
-            this.gcProductID.FieldName = "ProductID";
+            this.gcProductID.FieldName = "ProductId";
             this.gcProductID.Name = "gcProductID";
             this.gcProductID.Visible = true;
             this.gcProductID.VisibleIndex = 0;

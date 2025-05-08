@@ -13,20 +13,19 @@ namespace SweetBoxInventorySystem.Models
         private int productId;
         private string productName;
         private int productQuantity;
-        private DateTime expiryDate;
-        List<Ingredients> ingredientList { get; set; }
+        private string expiryDate = DateTime.Now.Date.ToString("yyyy-MM-dd");
 
         // Public properties with validation
         public int ProductId
         {
             get { return productId; }
-            private set { productId = value; } // Ensure ProductId cannot be changed after creation
+            set { productId = value; } // Ensure ProductId cannot be changed after creation
         }
 
         public string ProductName
         {
             get { return productName; }
-            private set { productName = value ?? throw new ArgumentNullException(nameof(ProductName), "Product name cannot be null."); }
+            set { productName = value ?? throw new ArgumentNullException(nameof(ProductName), "Product name cannot be null."); }
         }
 
         public int ProductQuantity
@@ -39,18 +38,18 @@ namespace SweetBoxInventorySystem.Models
             }
         }
 
-        public DateTime ExpiryDate
+        public string BoughtDate {
+            get;set;
+        }
+
+        public string ExpiryDate
         {
             get { return expiryDate; }
-            set
-            {
-                if (value < DateTime.Now) throw new ArgumentException("Expiry date cannot be in the past.", nameof(ExpiryDate));
-                expiryDate = value;
-            }
+            set { expiryDate = value; }
         }
 
         // Constructor to initialize the properties
-        public Product(int productId, string productName, int productQuantity, DateTime expiryDate)
+        public Product(int productId, string productName, int productQuantity, string expiryDate)
         {
             ProductId = productId;
             ProductName = productName;
@@ -62,9 +61,6 @@ namespace SweetBoxInventorySystem.Models
         public abstract string GetProductInfo();
 
         // Override ToString to provide clean product display
-        public override string ToString()
-        {
-            return $"{ProductName} - {GetProductInfo()}";
-        }
+        
     }
 }

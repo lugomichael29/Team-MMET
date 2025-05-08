@@ -128,6 +128,12 @@
     <Compile Include="UserControl\ViewSupplyUC.Designer.cs">
       <DependentUpon>ViewSupplyUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinForms\AddIngredientsType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\AddIngredientsType.Designer.cs">
+      <DependentUpon>AddIngredientsType.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinForms\AddItemForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\ViewSupplyUC.resx">
       <DependentUpon>ViewSupplyUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\AddIngredientsType.resx">
+      <DependentUpon>AddIngredientsType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinForms\AddItemForm.resx">
       <DependentUpon>AddItemForm.cs</DependentUpon>

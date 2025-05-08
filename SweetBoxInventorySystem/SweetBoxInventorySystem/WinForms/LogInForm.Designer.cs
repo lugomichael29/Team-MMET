@@ -54,7 +54,7 @@
             this.texUserName.Properties.ContextImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("texUserName.Properties.ContextImageOptions.SvgImage")));
             this.texUserName.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
             this.texUserName.Properties.UseAdvancedMode = DevExpress.Utils.DefaultBoolean.True;
-            this.texUserName.Size = new System.Drawing.Size(240, 42);
+            this.texUserName.Size = new System.Drawing.Size(206, 42);
             this.texUserName.TabIndex = 4;
             this.texUserName.EditValueChanged += new System.EventHandler(this.texUserName_EditValueChanged);
             // 
@@ -71,7 +71,7 @@
             this.texPassword.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
             this.texPassword.Properties.UseAdvancedMode = DevExpress.Utils.DefaultBoolean.True;
             this.texPassword.Properties.UseSystemPasswordChar = true;
-            this.texPassword.Size = new System.Drawing.Size(240, 47);
+            this.texPassword.Size = new System.Drawing.Size(206, 42);
             this.texPassword.TabIndex = 5;
             // 
             // BtnLogIn
@@ -81,7 +81,7 @@
             this.BtnLogIn.Location = new System.Drawing.Point(403, 333);
             this.BtnLogIn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnLogIn.Name = "BtnLogIn";
-            this.BtnLogIn.Size = new System.Drawing.Size(240, 39);
+            this.BtnLogIn.Size = new System.Drawing.Size(206, 36);
             this.BtnLogIn.TabIndex = 6;
             this.BtnLogIn.Text = "Log In";
             this.BtnLogIn.Click += new System.EventHandler(this.BtnLogIn_Click);
@@ -111,7 +111,9 @@
             this.Controls.Add(this.texPassword);
             this.Controls.Add(this.texUserName);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.MaximizeBox = false;
             this.Name = "LogInForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "LogInForm";
