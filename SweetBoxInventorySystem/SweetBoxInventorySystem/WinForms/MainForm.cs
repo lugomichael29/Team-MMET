@@ -78,5 +78,14 @@ namespace SweetBoxInventorySystem.WinForms
         {
 
         }
+
+      
+
+        private void aCAddIngredients_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddIngredientsType ingredientsTypeForm = new AddIngredientsType();
+            ingredientsTypeForm.Show();
+        }
     }
 }

@@ -16,6 +16,7 @@ namespace SweetBoxInventorySystem.WinForms
 {
     public partial class AddIngredientsType : DevExpress.XtraEditors.XtraForm
     {
+        
         public AddIngredientsType()
         {
             InitializeComponent();
@@ -33,12 +34,13 @@ namespace SweetBoxInventorySystem.WinForms
             string dateTimeExpired = dateEditExpirationdate.Text;
             int ingredientQuantityInteger = int.Parse(ingredientQuantity);
 
-            if (string.IsNullOrEmpty(ingredientName) || string.IsNullOrEmpty(ingredientName) || string.IsNullOrEmpty(ingredientQuantity) || string.IsNullOrEmpty(dateTimeBought) || string.IsNullOrEmpty(dateTimeExpired)) {
+            if (string.IsNullOrEmpty(ingredientName) || string.IsNullOrEmpty(ingredientName) || string.IsNullOrEmpty(ingredientQuantity) || string.IsNullOrEmpty(dateTimeBought) || string.IsNullOrEmpty(dateTimeExpired))
+            {
                 XtraMessageBox.Show("error");
                 return;
             }
-
-            switch(ingredientType) {
+            
+            switch (ingredientType) {
                 case "BeanType":
                    
                     using (var connection = new SQLiteConnection(_connectionString)) {
@@ -355,7 +357,8 @@ namespace SweetBoxInventorySystem.WinForms
                     using (var connection = new SQLiteConnection(_connectionString))
                     {
 
-                        var ingredients = new Ingredients
+                        var ingredients = new 
+                            Ingredients
                         {
                             IngredientType = ingredientType,
                             ProductName = ingredientName,

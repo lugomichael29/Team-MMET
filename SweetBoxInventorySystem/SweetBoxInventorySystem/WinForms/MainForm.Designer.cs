@@ -32,6 +32,7 @@
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.AcViewItem = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.AcAddItem = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.aCAddIngredients = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.AcUpdateItem = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.AcSearchExpiryDates = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -72,6 +73,7 @@
             this.accordionControlElement1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.AcViewItem,
             this.AcAddItem,
+            this.aCAddIngredients,
             this.AcUpdateItem});
             this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.Name = "accordionControlElement1";
@@ -94,6 +96,15 @@
             this.AcAddItem.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.AcAddItem.Text = "Add Item";
             this.AcAddItem.Click += new System.EventHandler(this.AcAddItem_Click);
+            // 
+            // aCAddIngredients
+            // 
+            this.aCAddIngredients.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aCAddIngredients.Appearance.Default.Options.UseFont = true;
+            this.aCAddIngredients.Name = "aCAddIngredients";
+            this.aCAddIngredients.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.aCAddIngredients.Text = "Add Ingredients";
+            this.aCAddIngredients.Click += new System.EventHandler(this.aCAddIngredients_Click_1);
             // 
             // AcUpdateItem
             // 
@@ -245,5 +256,6 @@
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator2;
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator1;
         private DevExpress.XtraEditors.PanelControl panelControlViewItem;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement aCAddIngredients;
     }
 }
