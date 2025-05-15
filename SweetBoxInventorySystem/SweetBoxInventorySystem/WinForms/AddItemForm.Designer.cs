@@ -183,6 +183,7 @@
             this.ClientSize = new System.Drawing.Size(500, 255);
             this.Controls.Add(this.layoutControl1);
             this.Name = "AddItemForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddItemForm";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);

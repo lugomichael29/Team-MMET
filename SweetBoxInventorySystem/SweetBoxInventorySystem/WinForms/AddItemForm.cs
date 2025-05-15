@@ -64,6 +64,7 @@ namespace SweetBoxInventorySystem.WinForms
                 connection.Execute(insertQuery, parameter);
                 XtraMessageBox.Show("Item successsfully added to the database");
                 connection.Close();
+                this.Close();
                 MainForm form = new MainForm();
                 form.Show();
             }

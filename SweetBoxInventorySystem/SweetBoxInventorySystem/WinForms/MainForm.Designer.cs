@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.AcViewItem = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -37,11 +38,11 @@
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.AcSearchExpiryDates = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator2 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
-            this.accordionControlElement8 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.AcViewPastOrders = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement11 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.AcFullInventoryOverview = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator1 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
+            this.accordionControlSeparator3 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
+            this.acLogOut = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.panelControlmainForm = new DevExpress.XtraEditors.PanelControl();
             this.panelControlViewItem = new DevExpress.XtraEditors.PanelControl();
             this.accordionControlOrder = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -57,11 +58,12 @@
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement1,
             this.accordionControlElement2,
-            this.accordionControlElement8,
-            this.accordionControlElement11});
+            this.accordionControlElement11,
+            this.accordionControlSeparator3,
+            this.acLogOut});
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
             this.accordionControl1.Name = "accordionControl1";
-            this.accordionControl1.Size = new System.Drawing.Size(222, 768);
+            this.accordionControl1.Size = new System.Drawing.Size(204, 768);
             this.accordionControl1.TabIndex = 0;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -82,6 +84,7 @@
             // 
             this.AcViewItem.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AcViewItem.Appearance.Default.Options.UseFont = true;
+            this.AcViewItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("AcViewItem.ImageOptions.Image")));
             this.AcViewItem.Name = "AcViewItem";
             this.AcViewItem.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.AcViewItem.Text = "View Item";
@@ -91,6 +94,7 @@
             // 
             this.AcAddItem.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AcAddItem.Appearance.Default.Options.UseFont = true;
+            this.AcAddItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("AcAddItem.ImageOptions.Image")));
             this.AcAddItem.Name = "AcAddItem";
             this.AcAddItem.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.AcAddItem.Text = "Add Item";
@@ -100,6 +104,7 @@
             // 
             this.aCAddIngredients.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aCAddIngredients.Appearance.Default.Options.UseFont = true;
+            this.aCAddIngredients.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("aCAddIngredients.ImageOptions.Image")));
             this.aCAddIngredients.Name = "aCAddIngredients";
             this.aCAddIngredients.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.aCAddIngredients.Text = "Add Ingredients";
@@ -109,6 +114,7 @@
             // 
             this.AcUpdateItem.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AcUpdateItem.Appearance.Default.Options.UseFont = true;
+            this.AcUpdateItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("AcUpdateItem.ImageOptions.Image")));
             this.AcUpdateItem.Name = "AcUpdateItem";
             this.AcUpdateItem.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.AcUpdateItem.Text = "Update Item";
@@ -129,6 +135,7 @@
             // 
             this.AcSearchExpiryDates.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AcSearchExpiryDates.Appearance.Default.Options.UseFont = true;
+            this.AcSearchExpiryDates.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("AcSearchExpiryDates.ImageOptions.Image")));
             this.AcSearchExpiryDates.Name = "AcSearchExpiryDates";
             this.AcSearchExpiryDates.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.AcSearchExpiryDates.Text = "Search Expiry Dates";
@@ -137,25 +144,6 @@
             // accordionControlSeparator2
             // 
             this.accordionControlSeparator2.Name = "accordionControlSeparator2";
-            // 
-            // accordionControlElement8
-            // 
-            this.accordionControlElement8.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement8.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement8.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.AcViewPastOrders});
-            this.accordionControlElement8.Expanded = true;
-            this.accordionControlElement8.Name = "accordionControlElement8";
-            this.accordionControlElement8.Text = "ORDER & REPORTS";
-            // 
-            // AcViewPastOrders
-            // 
-            this.AcViewPastOrders.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AcViewPastOrders.Appearance.Default.Options.UseFont = true;
-            this.AcViewPastOrders.Name = "AcViewPastOrders";
-            this.AcViewPastOrders.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.AcViewPastOrders.Text = "View Past Orders";
-            this.AcViewPastOrders.Click += new System.EventHandler(this.AcViewPastOrders_Click);
             // 
             // accordionControlElement11
             // 
@@ -172,22 +160,38 @@
             // 
             this.AcFullInventoryOverview.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AcFullInventoryOverview.Appearance.Default.Options.UseFont = true;
+            this.AcFullInventoryOverview.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("AcFullInventoryOverview.ImageOptions.Image")));
             this.AcFullInventoryOverview.Name = "AcFullInventoryOverview";
             this.AcFullInventoryOverview.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.AcFullInventoryOverview.Text = "Full Inventory Overview";
+            this.AcFullInventoryOverview.Text = "Inventory Overview";
             this.AcFullInventoryOverview.Click += new System.EventHandler(this.AcFullInventoryOverview_Click);
             // 
             // accordionControlSeparator1
             // 
             this.accordionControlSeparator1.Name = "accordionControlSeparator1";
             // 
+            // accordionControlSeparator3
+            // 
+            this.accordionControlSeparator3.Name = "accordionControlSeparator3";
+            // 
+            // acLogOut
+            // 
+            this.acLogOut.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.acLogOut.Appearance.Default.Options.UseFont = true;
+            this.acLogOut.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("acLogOut.ImageOptions.SvgImage")));
+            this.acLogOut.ImageOptions.SvgImageSize = new System.Drawing.Size(32, 32);
+            this.acLogOut.Name = "acLogOut";
+            this.acLogOut.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.acLogOut.Text = "LOG OUT";
+            this.acLogOut.Click += new System.EventHandler(this.acLogOut_Click);
+            // 
             // panelControlmainForm
             // 
             this.panelControlmainForm.Controls.Add(this.panelControlViewItem);
             this.panelControlmainForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControlmainForm.Location = new System.Drawing.Point(222, 0);
+            this.panelControlmainForm.Location = new System.Drawing.Point(204, 0);
             this.panelControlmainForm.Name = "panelControlmainForm";
-            this.panelControlmainForm.Size = new System.Drawing.Size(977, 768);
+            this.panelControlmainForm.Size = new System.Drawing.Size(995, 768);
             this.panelControlmainForm.TabIndex = 1;
             // 
             // panelControlViewItem
@@ -195,7 +199,7 @@
             this.panelControlViewItem.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControlViewItem.Location = new System.Drawing.Point(2, 2);
             this.panelControlViewItem.Name = "panelControlViewItem";
-            this.panelControlViewItem.Size = new System.Drawing.Size(973, 764);
+            this.panelControlViewItem.Size = new System.Drawing.Size(991, 764);
             this.panelControlViewItem.TabIndex = 0;
             // 
             // accordionControlOrder
@@ -237,13 +241,13 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement AcUpdateItem;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlOrder;
         private DevExpress.XtraBars.Navigation.AccordionControlElement AcSearchExpiryDates;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement8;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement AcViewPastOrders;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement11;
         private DevExpress.XtraBars.Navigation.AccordionControlElement AcFullInventoryOverview;
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator2;
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator1;
         private DevExpress.XtraEditors.PanelControl panelControlViewItem;
         private DevExpress.XtraBars.Navigation.AccordionControlElement aCAddIngredients;
+        private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator3;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement acLogOut;
     }
 }

@@ -30,8 +30,9 @@ namespace SweetBoxInventorySystem.WinForms
         private void AcAddItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddItemForm form = new AddItemForm();
-            form.Show();
+            AddItemForm AcAddItem = new AddItemForm();
+            AcAddItem.Show();
+        
         }
 
         private void AcUpdateItem_Click(object sender, EventArgs e)
@@ -87,5 +88,49 @@ namespace SweetBoxInventorySystem.WinForms
             AddIngredientsType ingredientsTypeForm = new AddIngredientsType();
             ingredientsTypeForm.Show();
         }
+
+        private void acLogOut_Click(object sender, EventArgs e)
+        {
+                // Step 1: Confirm logout with user
+                DialogResult result = XtraMessageBox.Show(
+                    "Are you sure you want to log out?",
+                    "Confirm Logout",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question
+                );
+
+                if (result != DialogResult.Yes)
+                    return;
+
+                try
+                {
+                  
+
+                    // Step 3: Notify user of successful logout
+                    XtraMessageBox.Show(
+                        "Logout successful. Returning to login screen.",
+                        "Logout",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information
+                    );
+
+                    // Step 4: Close current form and show login form
+                    this.Hide();
+                    var loginForm = new LogInForm();
+                    loginForm.Show();
+                }
+                catch (Exception ex)
+                {
+                    // Step 5: Handle any errors
+                    XtraMessageBox.Show(
+                        $"Logout failed: {ex.Message}",
+                        "Error",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error
+                    );
+                }
+
+                //Application.Exit();
+            }
     }
 }

@@ -29,9 +29,11 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.dateEditExpirationdate = new DevExpress.XtraEditors.DateEdit();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.cbIngredientsType = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.btnAddIngredient = new DevExpress.XtraEditors.SimpleButton();
             this.dateAddDateIngredients = new DevExpress.XtraEditors.DateEdit();
@@ -40,23 +42,21 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.teSupplyName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.cbIngredientsType = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.dateEditExpirationdate = new DevExpress.XtraEditors.DateEdit();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditExpirationdate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditExpirationdate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbIngredientsType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateAddDateIngredients.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateAddDateIngredients.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teQuantity.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teSupplyName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbIngredientsType.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEditExpirationdate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEditExpirationdate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -66,19 +66,9 @@
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(449, 354);
+            this.layoutControl1.Size = new System.Drawing.Size(468, 361);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
-            // 
-            // Root
-            // 
-            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.Root.GroupBordersVisible = false;
-            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem1});
-            this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(449, 354);
-            this.Root.TextVisible = false;
             // 
             // panelControl1
             // 
@@ -96,17 +86,65 @@
             this.panelControl1.Controls.Add(this.labelControl1);
             this.panelControl1.Location = new System.Drawing.Point(12, 12);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(425, 330);
+            this.panelControl1.Size = new System.Drawing.Size(444, 337);
             this.panelControl1.TabIndex = 4;
             // 
-            // layoutControlItem1
+            // dateEditExpirationdate
             // 
-            this.layoutControlItem1.Control = this.panelControl1;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(429, 334);
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextVisible = false;
+            this.dateEditExpirationdate.EditValue = null;
+            this.dateEditExpirationdate.Location = new System.Drawing.Point(115, 232);
+            this.dateEditExpirationdate.Name = "dateEditExpirationdate";
+            this.dateEditExpirationdate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEditExpirationdate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEditExpirationdate.Size = new System.Drawing.Size(224, 20);
+            this.dateEditExpirationdate.TabIndex = 19;
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Location = new System.Drawing.Point(49, 235);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(60, 13);
+            this.labelControl6.TabIndex = 18;
+            this.labelControl6.Text = "Expiry Date:";
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Location = new System.Drawing.Point(23, 111);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(86, 13);
+            this.labelControl5.TabIndex = 17;
+            this.labelControl5.Text = "Ingredients Type:";
+            // 
+            // cbIngredientsType
+            // 
+            this.cbIngredientsType.Location = new System.Drawing.Point(115, 108);
+            this.cbIngredientsType.Name = "cbIngredientsType";
+            this.cbIngredientsType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbIngredientsType.Properties.Items.AddRange(new object[] {
+            "BeanType",
+            "Milk",
+            "ChocolateSauce",
+            "WhiteChocolateSauce",
+            "SugarPackets",
+            "Creamers",
+            "CaramelSauce",
+            "VanillaSyrup",
+            "CaramelSyrup",
+            "SaltedCaramelSyrup",
+            "CheeseCakeSyrup",
+            "HazelNutSyrup",
+            "VanilaPowder",
+            " StrawberryPowder",
+            "MatchaPowder",
+            "ChocolatePowder",
+            "FrappeBasePowder",
+            "Fructose",
+            "CreamerPowder"});
+            this.cbIngredientsType.Size = new System.Drawing.Size(224, 20);
+            this.cbIngredientsType.TabIndex = 16;
             // 
             // labelControl4
             // 
@@ -120,9 +158,9 @@
             // 
             // btnAddIngredient
             // 
-            this.btnAddIngredient.Location = new System.Drawing.Point(157, 269);
+            this.btnAddIngredient.Location = new System.Drawing.Point(194, 269);
             this.btnAddIngredient.Name = "btnAddIngredient";
-            this.btnAddIngredient.Size = new System.Drawing.Size(182, 37);
+            this.btnAddIngredient.Size = new System.Drawing.Size(145, 37);
             this.btnAddIngredient.TabIndex = 14;
             this.btnAddIngredient.Text = "Add Indgredients Type";
             this.btnAddIngredient.Click += new System.EventHandler(this.btnAddIngredient_Click);
@@ -177,85 +215,48 @@
             this.labelControl1.TabIndex = 8;
             this.labelControl1.Text = "Supply Name:";
             // 
-            // cbIngredientsType
+            // Root
             // 
-            this.cbIngredientsType.Location = new System.Drawing.Point(115, 108);
-            this.cbIngredientsType.Name = "cbIngredientsType";
-            this.cbIngredientsType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbIngredientsType.Properties.Items.AddRange(new object[] {
-            "BeanType",
-            "Milk",
-            "ChocolateSauce",
-            "WhiteChocolateSauce",
-            "SugarPackets",
-            "Creamers",
-            "CaramelSauce",
-            "VanillaSyrup",
-            "CaramelSyrup",
-            "SaltedCaramelSyrup",
-            "CheeseCakeSyrup",
-            "HazelNutSyrup",
-            "VanilaPowder",
-            " StrawberryPowder",
-            "MatchaPowder",
-            "ChocolatePowder",
-            "FrappeBasePowder",
-            "Fructose",
-            "CreamerPowder"});
-            this.cbIngredientsType.Size = new System.Drawing.Size(224, 20);
-            this.cbIngredientsType.TabIndex = 16;
+            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.Root.GroupBordersVisible = false;
+            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem1});
+            this.Root.Name = "Root";
+            this.Root.Size = new System.Drawing.Size(468, 361);
+            this.Root.TextVisible = false;
             // 
-            // labelControl5
+            // layoutControlItem1
             // 
-            this.labelControl5.Location = new System.Drawing.Point(23, 111);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(86, 13);
-            this.labelControl5.TabIndex = 17;
-            this.labelControl5.Text = "Ingredients Type:";
-            // 
-            // dateEditExpirationdate
-            // 
-            this.dateEditExpirationdate.EditValue = null;
-            this.dateEditExpirationdate.Location = new System.Drawing.Point(115, 232);
-            this.dateEditExpirationdate.Name = "dateEditExpirationdate";
-            this.dateEditExpirationdate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEditExpirationdate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEditExpirationdate.Size = new System.Drawing.Size(224, 20);
-            this.dateEditExpirationdate.TabIndex = 19;
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Location = new System.Drawing.Point(49, 235);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(60, 13);
-            this.labelControl6.TabIndex = 18;
-            this.labelControl6.Text = "Expiry Date:";
+            this.layoutControlItem1.Control = this.panelControl1;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(448, 341);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem1.TextVisible = false;
             // 
             // AddIngredientsType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(449, 354);
+            this.ClientSize = new System.Drawing.Size(468, 361);
             this.Controls.Add(this.layoutControl1);
             this.Name = "AddIngredientsType";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddIngredientsType";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditExpirationdate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditExpirationdate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbIngredientsType.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateAddDateIngredients.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateAddDateIngredients.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teQuantity.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teSupplyName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbIngredientsType.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEditExpirationdate.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEditExpirationdate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             this.ResumeLayout(false);
 
         }
